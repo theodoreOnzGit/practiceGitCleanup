@@ -40,6 +40,11 @@ boundaryField
         type            processor;
         value           uniform 22.4;
     }
+    procBoundary1to3
+    {
+        type            processor;
+        value           uniform 22.4;
+    }
 }
 
 

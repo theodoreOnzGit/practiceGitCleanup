@@ -7,14 +7,23 @@
 \*---------------------------------------------------------------------------*/
 Build  : v1906 OPENFOAM=1906
 Arch   : "LSB;label=32;scalar=64"
-Exec   : createPatch -overwrite
-Date   : Aug 26 2019
-Time   : 17:55:11
-Host   : DESKTOP-9S60IA4
-PID    : 1332
+Exec   : createPatch -parallel -overwrite
+Date   : Aug 28 2019
+Time   : 12:33:39
+Host   : LAPTOP-FK3MEHTI
+PID    : 1653
 I/O    : uncollated
-Case   : /home/theodore_ong/GitHub_software/thin_pipeflow_snappyHexMesh/refined_pisoFoam_snappyPipe
-nProcs : 1
+Case   : /home/theodore_ong/GitHub_OpenFoam_workspace/thin_pipeflow_snappyHexMesh/refined_pisoFoam_snappyPipe
+nProcs : 4
+Hosts  :
+(
+    (LAPTOP-FK3MEHTI 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
 allowSystemOperations : Allowing user-supplied system call operations
@@ -58,3 +67,4 @@ Writing repatched mesh to 0
 
 End
 
+Finalising parallel run

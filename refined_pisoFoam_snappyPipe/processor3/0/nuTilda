@@ -34,7 +34,7 @@ boundaryField
     {
         type            zeroGradient;
     }
-    procBoundary3to0
+    procBoundary3to1
     {
         type            processor;
         value           uniform 0;

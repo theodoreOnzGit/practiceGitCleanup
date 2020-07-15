@@ -7,14 +7,23 @@
 \*---------------------------------------------------------------------------*/
 Build  : v1906 OPENFOAM=1906
 Arch   : "LSB;label=32;scalar=64"
-Exec   : topoSet
-Date   : Aug 26 2019
-Time   : 17:55:08
-Host   : DESKTOP-9S60IA4
-PID    : 1331
+Exec   : topoSet -parallel
+Date   : Aug 28 2019
+Time   : 12:33:37
+Host   : LAPTOP-FK3MEHTI
+PID    : 1640
 I/O    : uncollated
-Case   : /home/theodore_ong/GitHub_software/thin_pipeflow_snappyHexMesh/refined_pisoFoam_snappyPipe
-nProcs : 1
+Case   : /home/theodore_ong/GitHub_OpenFoam_workspace/thin_pipeflow_snappyHexMesh/refined_pisoFoam_snappyPipe
+nProcs : 4
+Hosts  :
+(
+    (LAPTOP-FK3MEHTI 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
 allowSystemOperations : Allowing user-supplied system call operations
@@ -31,16 +40,16 @@ Time = 0
 Created faceSet cylinder
     Applying source patchToFace
     Adding all faces of patches 1(cylinder) ...
-    Found matching patch cylinder with 49584 faces.
+    Found matching patch cylinder with 11847 faces.
     faceSet cylinder now size 49584
 Created faceSet bottom_patch_negative
     Applying source boxToFace
     Adding faces with centre within boxes 1((-0.6 -0.6 0.01) (0.6 0.6 41))
-    faceSet bottom_patch_negative now size 543524
+    faceSet bottom_patch_negative now size 544249
 Created faceSet top_patch_negative
     Applying source boxToFace
     Adding faces with centre within boxes 1((-0.6 -0.6 -1) (0.6 0.6 39.99))
-    faceSet top_patch_negative now size 543524
+    faceSet top_patch_negative now size 544249
 Created faceSet bottomPatch
     Applying source faceToFace
     Adding all elements of faceSet 1(cylinder)
@@ -72,3 +81,4 @@ Read set faceSet wall with size 47816
 
 End
 
+Finalising parallel run

@@ -37,7 +37,7 @@ boundaryField
         intensity       0.05;
         value           nonuniform 0();
     }
-    procBoundary3to0
+    procBoundary3to1
     {
         type            processor;
         value           uniform 3.75e-05;

@@ -35,9 +35,14 @@ boundaryField
     {
         type            turbulentIntensityKineticEnergyInlet;
         intensity       0.05;
-        value           uniform 3.75e-05;
+        value           nonuniform 0();
     }
     procBoundary1to0
+    {
+        type            processor;
+        value           uniform 3.75e-05;
+    }
+    procBoundary1to3
     {
         type            processor;
         value           uniform 3.75e-05;
