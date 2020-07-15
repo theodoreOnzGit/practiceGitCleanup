@@ -42648,10 +42648,11 @@ boundaryField
     }
     wall
     {
+        type            epsilonWallFunction;
         Cmu             0.09;
         kappa           0.41;
         E               9.8;
-        type            epsilonWallFunction;
+        lowReCorrection 0;
         value           nonuniform List<scalar> 
 11152
 (
@@ -53809,7 +53810,6 @@ boundaryField
 2.24619e-05
 )
 ;
-        lowReCorrection 0;
     }
     bottomPatch
     {
